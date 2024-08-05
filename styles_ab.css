@@ -1,0 +1,113 @@
+:root {
+    --dark-brown: #685044;
+    --olive: #4E5942;
+    --forest: #34623F;
+    --light-green: #80B192;
+    --cream: #FFF4EC;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--cream);
+}
+header {
+    background-color: var(--forest);
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--cream);
+}
+section {
+    padding: 2rem;
+    border-radius: 8px;
+    color: var(--cream);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.bg-dark-brown {
+    background-color: var(--dark-brown);
+}
+.bg-olive {
+    background-color: var(--olive);
+}
+.bg-forest {
+    background-color: var(--forest);
+}
+.text-light-green {
+    color: var(--light-green);
+}
+.text-cream {
+    color: var(--cream);
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+.carousel-inner img {
+    border-radius: 6px;
+}
+footer {
+    background-color: #4E5942;
+    color: #FFF4EC;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    flex-shrink: 0;
+}
+
+.home-link {
+    margin-top: 40px;
+  }
+  
+  .home-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .home-link a:hover {
+    background-color: #FFF4EC;
+    color: #4E5942;
+  }
+  /* Navbar Styles */
+
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #682044;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #80B192;
+}
+
+.dropdown-item {
+   color:#4E5942
+}
+
+/* Additional custom styles */
+.navbar-nav .form-control {
+  margin-left: 15px;
+}
+
+.navbar-nav .btn {
+  margin-left: 5px;
+}
+
+.carousel-inner img {
+    border-radius: 8px;
+}
+
+.carousel-item img {
+    filter: brightness(70%);
+    margin-bottom: 0px;
+}
